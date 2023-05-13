@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 50px;
+  color: #f7f7f7;
+  min-height: 100vh;
+  background: #252525;
+  text-rendering: optimizeSpeed;
+  font-family: "Roboto", sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 500px;
+  min-height: 500px;
+  background: white;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 5px;
+}
+
+h1 {
+  font-weight: 300;
+  color: #44c0b6;
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.input-wrapper {
+  margin: 3.5rem;
+}
+
+.todos-wrapper {
+  margin-bottom: 2.5rem;
+}
+
+.todo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+input {
+  width: 450px;
+  padding: 0.8em;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  padding: 16px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+input {
+  padding: 15px 32px 15px 16px;
+  border-radius: 20px 0 0 20px;
+  border: 1px solid #dfe1e5;
+  outline: none;
+  width: 320px;
+  background: transparent;
+}
+
+.add-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  outline: none;
+  background: #44c0b6;
+  color: #788a87;
+  text-transform: capitalize;
+}
+
+.add-button:hover {
+  color: #252525;
+  background: #44c0b6;
+}
+
+.delete-button {
+  color: #eeebeb;
+  background: #fe6a6a;
+}
+
+.delete-button:hover {
+  color: #1f1515;
+  background: #df0d0d;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 0px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-radius: 20px 0 0 20px;
+  width: 80%;
+  color: #252525;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.023),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+li:last-child {
+  margin-bottom: 0px;
+}
+
+.empty {
+  font-size: 20px;
+  font-weight: 400;
+  color: #cf972e;
+  letter-spacing: 0.2rem;
+}
